@@ -1,0 +1,2 @@
+ALL_PACKAGES += DPGAnalysis-SiPixelTools/PixelTrees
+subdirs_src_DPGAnalysis-SiPixelTools_PixelTrees := src_DPGAnalysis-SiPixelTools_PixelTrees_plugins src_DPGAnalysis-SiPixelTools_PixelTrees_python src_DPGAnalysis-SiPixelTools_PixelTrees_test

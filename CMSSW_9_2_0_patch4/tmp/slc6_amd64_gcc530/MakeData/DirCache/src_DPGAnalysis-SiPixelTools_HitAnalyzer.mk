@@ -1,0 +1,2 @@
+ALL_PACKAGES += DPGAnalysis-SiPixelTools/HitAnalyzer
+subdirs_src_DPGAnalysis-SiPixelTools_HitAnalyzer := src_DPGAnalysis-SiPixelTools_HitAnalyzer_test src_DPGAnalysis-SiPixelTools_HitAnalyzer_scripts

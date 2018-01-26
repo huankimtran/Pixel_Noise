@@ -1,0 +1,2 @@
+ALL_PACKAGES += DPGAnalysis-SiPixelTools/GainCalibration
+subdirs_src_DPGAnalysis-SiPixelTools_GainCalibration := src_DPGAnalysis-SiPixelTools_GainCalibration_plugins src_DPGAnalysis-SiPixelTools_GainCalibration_python src_DPGAnalysis-SiPixelTools_GainCalibration_test

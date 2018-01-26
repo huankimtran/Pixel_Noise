@@ -1,0 +1,2 @@
+ALL_PACKAGES += DPGAnalysis-SiPixelTools/PixelDBTools
+subdirs_src_DPGAnalysis-SiPixelTools_PixelDBTools := src_DPGAnalysis-SiPixelTools_PixelDBTools_test

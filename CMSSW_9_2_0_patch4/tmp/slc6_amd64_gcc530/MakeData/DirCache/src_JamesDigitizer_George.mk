@@ -1,0 +1,2 @@
+ALL_PACKAGES += JamesDigitizer/George
+subdirs_src_JamesDigitizer_George := src_JamesDigitizer_George_test src_JamesDigitizer_George_plugins src_JamesDigitizer_George_python

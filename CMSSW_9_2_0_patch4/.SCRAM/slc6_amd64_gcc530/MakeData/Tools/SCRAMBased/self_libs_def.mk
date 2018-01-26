@@ -1,0 +1,11 @@
+RecoPixelVertexingPixelTrackFitting_PACKAGE := self/src/RecoPixelVertexing/PixelTrackFitting/src
+CalibrationHcalAlCaRecoProducers_PACKAGE := self/src/Calibration/HcalAlCaRecoProducers/src
+RecoEgammaGEDValueMapAnalyzer_PACKAGE := self/src/RecoEgamma/EgammaElectronProducers/test
+RecoEgammaEgammaElectronProducersPlugins_PACKAGE := self/src/RecoEgamma/EgammaElectronProducers/plugins
+HLTriggerJSONMonitoringPlugins_PACKAGE := self/src/HLTrigger/JSONMonitoring/plugins
+PixelTrackTest_PACKAGE := self/src/RecoPixelVertexing/PixelTrackFitting/test
+RecoEgammaEgammaHLTProducers_PACKAGE := self/src/RecoEgamma/EgammaHLTProducers/src
+RecoEgammaEgammaElectronAlgos_PACKAGE := self/src/RecoEgamma/EgammaElectronAlgos/src
+CalibrationHcalAlCaRecoProducersPlugins_PACKAGE := self/src/Calibration/HcalAlCaRecoProducers/plugins
+RecoPixelVertexingPixelTrackFittingPlugins_PACKAGE := self/src/RecoPixelVertexing/PixelTrackFitting/plugins
+FWCoreVersion_PACKAGE := self/src/FWCore/Version/src

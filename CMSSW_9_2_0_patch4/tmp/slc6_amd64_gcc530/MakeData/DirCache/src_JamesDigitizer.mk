@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=JamesDigitizer
+subdirs_src_JamesDigitizer = src_JamesDigitizer_Digitizer src_JamesDigitizer_George

@@ -1,0 +1,3 @@
+tmp/slc6_amd64_gcc530/src/JamesDigitizer/George/plugins/JamesDigitizerGeorgeAuto/George.o: \
+ src/JamesDigitizer/George/plugins/George.cc \
+

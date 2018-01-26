@@ -1,0 +1,2 @@
+ALL_PACKAGES += DPGAnalysis-SiPixelTools/LA-Calibration
+subdirs_src_DPGAnalysis-SiPixelTools_LA-Calibration := src_DPGAnalysis-SiPixelTools_LA-Calibration_interface src_DPGAnalysis-SiPixelTools_LA-Calibration_python src_DPGAnalysis-SiPixelTools_LA-Calibration_src src_DPGAnalysis-SiPixelTools_LA-Calibration_test
