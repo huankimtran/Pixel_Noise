@@ -1,9 +1,9 @@
-===============================================================
-How to run the Simulator-Run-Configfile.py
-==============================================================
--The Simulator-Run-Configfile.py is located in DPGAnalysis-SiPixelTools/HitAnalyzer/Simulator-Run-Configfile.py
--Move to the src folder of the CMSSW folder
--Run cmsenv
+===============================================================<br />
+How to run the Simulator-Run-Configfile.py<br />
+==============================================================<br />
+-The Simulator-Run-Configfile.py is located in DPGAnalysis-SiPixelTools/HitAnalyzer/Simulator-Run-Configfile.py<br />
+-Move to the src folder of the CMSSW folder<br />
+-Run cmsenv<br />
 -Run scram b -j
 -If scram b -j give you errors of missing library, try trace the error and deleting all files that cause the errors
 -In the Simulator-Run-Configfile.py put your Monte Carlo simulating .root data files at the line 32
