@@ -1,7 +1,7 @@
 #
 import FWCore.ParameterSet.Config as cms
 
-process = cms.Process("d")
+process = cms.Process("sample")
 
 import HLTrigger.HLTfilters.hltHighLevel_cfi as hlt
 # accept if 'path_1' succeeds
@@ -173,13 +173,17 @@ process.source = cms.Source("NewEventStreamFileReader",
 # "/store/t0streamer/Data/PhysicsZeroBias4/000/299/996/run299996_ls0027_streamPhysicsZeroBias4_StorageManager.dat",
 # "/store/t0streamer/Data/PhysicsZeroBias5/000/299/996/run299996_ls0027_streamPhysicsZeroBias5_StorageManager.dat",
 # "/store/t0streamer/Data/PhysicsZeroBias1/000/300/018/run300018_ls0002_streamPhysicsZeroBias1_StorageManager.dat",
-"/store/t0streamer/Data/PhysicsZeroBias2/000/305/181/run305181_ls0002_streamPhysicsZeroBias2_StorageManager.dat",
-"/store/t0streamer/Data/PhysicsZeroBias3/000/305/181/run305181_ls0002_streamPhysicsZeroBias3_StorageManager.dat",
-"/store/t0streamer/Data/PhysicsZeroBias4/000/305/181/run305181_ls0002_streamPhysicsZeroBias4_StorageManager.dat",
+
+#"/store/t0streamer/Data/PhysicsZeroBias2/000/305/181/run305181_ls0002_streamPhysicsZeroBias2_StorageManager.dat",
+#"/store/t0streamer/Data/PhysicsZeroBias3/000/305/181/run305181_ls0002_streamPhysicsZeroBias3_StorageManager.dat",
+#"/store/t0streamer/Data/PhysicsZeroBias4/000/305/181/run305181_ls0002_streamPhysicsZeroBias4_StorageManager.dat",
+"file:/home/hkt2/data.dat"
+#'/home/mck4/run314472_ls0085_streamPhysicsZeroBias6_StorageManager.dat'
 #"/store/t0streamer/Data/PhysicsZeroBias5/000/300/018/run300018_ls0002_streamPhysicsZeroBias5_StorageManager.dat",
 # "/store/t0streamer/Data/PhysicsZeroBias1/000/300/018/run300018_ls0003_streamPhysicsZeroBias1_StorageManager.dat",
 # "/store/t0streamer/Data/PhysicsZeroBias2/000/300/018/run300018_ls0003_streamPhysicsZeroBias2_StorageManager.dat",
 # "/store/t0streamer/Data/PhysicsZeroBias3/000/300/018/run300018_ls0003_streamPhysicsZeroBias3_StorageManager.dat",
+
 # "/store/t0streamer/Data/PhysicsZeroBias4/000/300/018/run300018_ls0003_streamPhysicsZeroBias4_StorageManager.dat",
 # "/store/t0streamer/Data/PhysicsZeroBias5/000/300/018/run300018_ls0003_streamPhysicsZeroBias5_StorageManager.dat",
 
@@ -228,6 +232,6 @@ process.d = cms.EDAnalyzer("SiPixelRawDump",
 #process.p = cms.Path(process.hltfilter*process.d)
 process.p = cms.Path(process.d)
 
-#process.ep = cms.EndPath(process.out)
+process.ep = cms.EndPath(process.output)
 
 
