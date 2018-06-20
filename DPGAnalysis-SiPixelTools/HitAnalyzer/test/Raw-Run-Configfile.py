@@ -19,7 +19,7 @@ process.MessageLogger = cms.Service("MessageLogger",
 )
 # -1 means processing all events
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(-1)
+    input = cms.untracked.int32(51)
 )
 #Setting up a service to write out the root file containing histograms
 process.TFileService = cms.Service("TFileService",
@@ -28,25 +28,8 @@ process.TFileService = cms.Service("TFileService",
 #Setting up the input files
 #Do not change the name of the attribute .source
 #It is another 'unlableable' variable
-process.source = cms.Source("PoolSource",
-    fileNames = cms.untracked.vstring(
-		"file:/storage0/data/mck4/HydJet_B0/step2_1.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_2.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_3.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_4.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_5.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_6.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_7.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_8.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_9.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_10.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_11.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_12.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_13.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_14.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_15.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_16.root",
-		"file:/storage0/data/mck4/HydJet_B0/step2_17.root",
+process.source = cms.Source("NewEventStreamFileReader",    fileNames = cms.untracked.vstring(
+		"file:/home/hkt2/data.dat"
 	)
 )
 #Setting up the analyzer

@@ -844,6 +844,7 @@ void SiPixelRawDump::beginJob() {
 
   while (getline(in,line)) {
     linenum++;
+	cout<<line<<endl;
     getline(in, dummy, '_');
     if (dummy.compare("FPix") == 0) break;
     getline(in, dummy, '_');
@@ -883,7 +884,7 @@ void SiPixelRawDump::beginJob() {
   }
 
   cout << "Completed FED Map" << endl;
-
+  cout <<"Number of line "<<linenum<<endl;
   //************************************* Done making map  **************************************
 
   edm::Service<TFileService> fs;
